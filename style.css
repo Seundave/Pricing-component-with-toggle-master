@@ -1,0 +1,241 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+
+body{
+    width:100%;
+    height:100%;
+    font-family: montserrat;
+    background-image: url(images/bg-top.svg),url(images/bg-bottom.svg);
+    background-position: top right,bottom left;
+    background-color: hsl(240, 78%, 98%);
+    background-size: 20%, 20%;
+    background-repeat: no-repeat, no-repeat;
+    transition: .5s ease;
+}
+
+.title > p{
+    text-align: center;
+    font-family: montserrat;
+    font-weight: bolder;
+    font-size: 25px;
+    color:hsl(232, 13%, 33%);
+    margin-top: 50px;
+}
+
+.pricing-package {
+    margin-top: 35px;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:hsl(234, 14%, 74%);
+}
+
+.pricing-package > h3,.toggle-button{
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+.packages{
+    margin:40px auto;
+    display: flex;
+    max-width: 1250px;
+    justify-content: center;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.Basic,.Master{
+    width:300px;
+    height:350px;
+    border-radius:10px;
+    background-color: white;
+    margin-top: 21px;
+    text-align: center;
+}
+
+hr{
+    width:250px;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
+    height:1px;
+}
+
+.Professional{
+    width:300px;
+    height:400px;
+    border-radius:10px;
+    background-color: white;
+    margin-top: 0px;
+    text-align: center;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.Basic > h2{
+    color:hsl(232, 13%, 33%);
+    font-size: 15px;
+    margin: 25px;
+}
+
+.Basic > h1{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+}
+
+.Basic > h4{
+    color:hsl(231, 4%, 37%);
+    margin: 10px 0px;
+}
+
+Button{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:white;
+    font-weight: bold;
+    font-family: montserrat;
+    width:250px;
+    margin:17px 0px;
+    height:35px;
+    border-radius: 5px;
+    border:none;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.professional-btn{
+    width:250px;
+    margin:17px 0px;
+    height:35px;
+    border-radius: 5px;
+    border:none;
+    background: white;
+    font-size: 12px;
+    color:hsl(237, 63%, 64%);
+    font-weight: bold;
+    font-family: montserrat;
+    letter-spacing: 1px;
+}
+
+
+/* .Professional{
+    width:300px;
+    height:350px;
+    border-radius:5px;
+    background-color: white;
+    text-align: center;
+} */
+
+.Professional > h2{
+    color:white;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 31px;
+}
+
+.Professional > h1{
+    color:white;
+    font-size: 45px;
+    margin: 15px 0px;
+}
+
+.Professional > h4{
+    color:white;
+    margin: 10px 0px;
+}
+
+.Master > h2{
+    color:hsl(232, 13%, 33%);
+    font-size: 15px;
+    margin: 25px 0px;
+}
+
+.Master > h1{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+}
+
+.Master > h4{
+    color:hsl(231, 4%, 37%);
+    margin: 10px 0px;
+}
+
+
+
+.toggle{
+    background-color:white;
+    width:45px;
+    height:23px;
+    border-radius:12px;
+    padding:0.4rem;
+    display:flex;
+    align-items: center;
+    margin:0px 10px;
+}
+
+.toggle_btn{
+    background-color: white;
+    height:15px;
+    width:50%;
+    border-radius:50%;
+    transition: all 0.4s;
+}
+
+.toggle.active{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+
+.night .toggle{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.night-mode{
+    transform:translateX(100%);
+}
+
+.night .Basic > h1{
+    content: "19.99";
+}
+
+.night .Professional > h1{
+    content: "24.99";
+}
+
+.night .Master > h1{
+    content: "39.99";
+}
+
+@media only screen and (max-width: 400px) {
+    .packages{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        max-width: 100%;
+        height:auto
+    }
+
+    .Basic{
+        width:100%;
+        justify-content: center;
+        margin:20px auto;
+    }
+
+    .Professional{
+        justify-content: center;
+        margin:auto;
+    }
+
+    .Master{
+        justify-content: center;
+        margin:20px auto;
+    }
+}
+
+
+
