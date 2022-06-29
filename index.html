@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  
   
   <title>Frontend Mentor | [Pricing component with toggle master]</title>
 
@@ -14,6 +14,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="title">
@@ -23,7 +24,7 @@
   <div class="pricing-package">
     <h3> Annually</h3>
     <div class="toggle-button">
-      <div class="toggle active" onclick="this.classList.toggle('active')">
+      <div class="toggle">
         <span class="toggle_btn"></span>
       </div>
     </div>
@@ -33,39 +34,42 @@
   <div class="packages">
     <div class="Basic">
       <h2> Basic </h2>
-      <h1> <span style="font-size:30px; margin-bottom:2px">$</span> 199.99</h1>
+      <p class="a-amount"> $ 199.99</p>
+      <p class="m-amount"> $ 19.99</p>
       <hr>
-      <h4> 500 GB Storage </h4>
+      <p> 500 GB Storage </p>
       <hr>
-      <h4> 2 Users Allowed </h4>
+      <p> 2 Users Allowed </p>
       <hr>
-      <h4> Send up to 3 GB </h4>
+      <p> Send up to 3 GB </p>
       <hr>
       <button> LEARN MORE </button>
     </div>
 
     <div class="Professional">
       <h2> Professional </h2>
-      <h1> <span style="font-size:30px; margin-bottom:2px">$</span> 249.99</h1>
+      <p class="p-a-amount"> $ 249.99</p>
+      <p class="p-m-amount"> $ 24.99</p>
       <hr>
-      <h4> 1 TB Storage </h4>
+      <p> 1 TB Storage </p>
       <hr>
-      <h4> 5 Users Allowed </h4>
+      <p> 5 Users Allowed </p>
       <hr>
-      <h4> Send up to 10 GB </h4>
+      <p> Send up to 10 GB </p>
       <hr>
       <button class="professional-btn"> LEARN MORE </button>
     </div>
 
     <div class="Master">
       <h2> Master </h2>
-      <h1> <span style="font-size:30px; margin-bottom:2px">$</span> 399.99</h1>
+      <p class="m-a-amount"> $ 399.99</p>
+      <p class="m-m-amount"> $ 39.99</p>
       <hr>
-      <h4> 2 TB Storage </h4>
+      <p> 2 TB Storage </p>
       <hr>
-      <h4> 10 Users Allowed </h4>
+      <p> 10 Users Allowed </p>
       <hr>
-      <h4> Send up to 20 GB </h4>
+      <p> Send up to 20 GB </p>
       <hr>
       <button> LEARN MORE </button>
     </div>

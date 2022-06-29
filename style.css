@@ -45,7 +45,8 @@ body{
     display: flex;
     max-width: 1250px;
     justify-content: center;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     flex-wrap: wrap;
 }
 
@@ -55,6 +56,7 @@ body{
     border-radius:10px;
     background-color: white;
     margin-top: 21px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -71,7 +73,7 @@ hr{
     height:400px;
     border-radius:10px;
     background-color: white;
-    margin-top: 0px;
+    /* margin-top: 20px; */
     text-align: center;
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
@@ -82,13 +84,101 @@ hr{
     margin: 25px;
 }
 
-.Basic > h1{
+.a-amount{
     color:hsl(232, 13%, 33%);
     font-size: 45px;
     margin: 15px 0px;
+    font-weight: bolder;
 }
 
-.Basic > h4{
+.m-amount{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.a-amount.active{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.m-amount.active{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: block;
+}
+
+.p-a-amount{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+.p-m-amount{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.p-a-amount.active{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.p-m-amount.active{
+    color:white;
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: block;
+}
+
+.m-a-amount{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+.m-m-amount{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.m-a-amount.active{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: none;
+}
+
+.m-m-amount.active{
+    color:hsl(232, 13%, 33%);
+    font-size: 45px;
+    margin: 15px 0px;
+    font-weight: bolder;
+    display: block;
+}
+
+
+.Basic > p{
     color:hsl(231, 4%, 37%);
     margin: 10px 0px;
 }
@@ -122,14 +212,6 @@ Button{
 }
 
 
-/* .Professional{
-    width:300px;
-    height:350px;
-    border-radius:5px;
-    background-color: white;
-    text-align: center;
-} */
-
 .Professional > h2{
     color:white;
     font-size: 15px;
@@ -143,7 +225,7 @@ Button{
     margin: 15px 0px;
 }
 
-.Professional > h4{
+.Professional > p{
     color:white;
     margin: 10px 0px;
 }
@@ -160,7 +242,7 @@ Button{
     margin: 15px 0px;
 }
 
-.Master > h4{
+.Master > p{
     color:hsl(231, 4%, 37%);
     margin: 10px 0px;
 }
@@ -168,7 +250,7 @@ Button{
 
 
 .toggle{
-    background-color:white;
+    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));;
     width:45px;
     height:23px;
     border-radius:12px;
@@ -186,29 +268,9 @@ Button{
     transition: all 0.4s;
 }
 
-.toggle.active{
-    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-}
 
-
-.night .toggle{
-    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-}
-
-.night-mode{
+.toggle_btn.active{
     transform:translateX(100%);
-}
-
-.night .Basic > h1{
-    content: "19.99";
-}
-
-.night .Professional > h1{
-    content: "24.99";
-}
-
-.night .Master > h1{
-    content: "39.99";
 }
 
 @media only screen and (max-width: 400px) {
